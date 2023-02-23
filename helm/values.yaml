@@ -1,6 +1,6 @@
 application:
   author: pedrotanajura
-  name: pythonAppDemo
+  name: python-app-demo
   type: app
 
 replicaCount: 1
@@ -8,7 +8,7 @@ replicaCount: 1
 image:
   repository: pedrotanajuraacr2023.azurecr.io
   pullPolicy: Always
-  tag: "v1"
+  tag: "lts"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -34,7 +34,7 @@ ingress:
   className: ""
   annotations: {}
   hosts:
-    - host: pythonAppDemo.local
+    - host: python-app-demo.local
       paths:
         - path: /
           pathType: ImplementationSpecific
