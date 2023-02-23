@@ -1,11 +1,11 @@
-name: Docker
+name: AZURE-CI
 
 on:
   push:
     tags: ["v*.*.*"]
 
 env:
-  IMAGE_NAME: departments-api
+  IMAGE_NAME: pythonAppDemo
 
 jobs:
   build:
